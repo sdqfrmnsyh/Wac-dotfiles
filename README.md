@@ -241,7 +241,7 @@ Display system information and music playback directly on your desktop.
 
 GUI Monitor + GUI Music Player
 
-![alt text](Screenshots/GUI.png)
+![](Screenshots/GUI.png)
 
 ---
 
@@ -249,7 +249,7 @@ GUI Monitor + GUI Music Player
 
 TUI Monitor + TUI Music Player
 
-![alt text](Screenshots/TUI.png)
+![](Screenshots/TUI.png)
 
 ---
 
@@ -257,7 +257,7 @@ TUI Monitor + TUI Music Player
 
 GUI Monitor + TUI Music Player
 
-![alt text](Screenshots/TGUI3.png)
+![](Screenshots/TGUI3.png)
 
 ---
 
@@ -265,7 +265,7 @@ GUI Monitor + TUI Music Player
 
 TUI Monitor + GUI Music Player
 
-![alt text](Screenshots/TGUI4.png)
+![](Screenshots/TGUI4.png)
 
 ---
 
