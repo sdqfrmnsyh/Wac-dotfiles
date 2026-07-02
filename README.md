@@ -166,6 +166,7 @@ Includes quick access to:
 - Themes
 - Wallpaper
 - Applications
+- Utilities
 - Mission Center
 - Power Menu
 

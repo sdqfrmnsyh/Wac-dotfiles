@@ -102,20 +102,20 @@ our $SCHEMA = [
         {item => ['~/.scripts/ricing.sh normal',               'Normal Mode', 'system-run']},
         {item => ['~/.scripts/ricing.sh rice',               'Ricing Mode', 'system-run']},
         {sep  => undef},
-        {item => ['~/.scripts/autocolorscheme.sh',               'Enable adaptive theme', 'tint2']},
-        {item => ['killall autocolorscheme.sh',               'Disable adaptive theme', 'tint2']},
+        {item => ['~/.scripts/colorscheme_context.sh enable',               'Enable adaptive theme', 'tint2']},
+        {item => ['~/.scripts/colorscheme_context.sh disable',               'Disable adaptive theme', 'tint2']},
         {item => ['~/.scripts/colorscheme.sh',               'Refresh theme', 'tint2']},
       {end => undef},
     {end => undef},
 
     {sep => undef},
 
-    ## The xscreensaver lock command
+	## The refresh screen command
+    {item => ['~/.scripts/display.sh', 'Refresh Display', 'preferences-desktop-theme']},
+    
+    ## The task manager command
     {item => ['missioncenter', 'Task manager', 'io.missioncenter.MissionCenter']},
-
-    ## This option uses the default Openbox's "Exit" action
-    # {exit => ['Exit', 'application-exit']},
-
+    
     ## This uses the 'oblogout' menu
     {item => ['archlinux-logout', 'Power', 'application-exit']},
 ]
