@@ -193,6 +193,82 @@ Launch via
 
 ---
 
+## 🖥️ Ricing Widgets
+
+Display system information and music playback directly on your desktop.
+
+> [!NOTE]
+> Ricing Widgets are designed for **Normal Mode**. They may overlap or look incorrect in **Ricing Mode**.
+
+### Supported Applications
+
+#### 📊 System Monitoring
+
+**GUI**
+
+- Mission Center
+
+**TUI**
+
+- htop
+- btop
+- top
+
+---
+
+#### 🎵 Music Player
+
+**GUI**
+
+- Resonance
+- DeadBeef
+- Rhythmbox
+- Strawberry
+- Audacious
+- YTMDesktop
+
+**TUI**
+
+- cmus
+- ncmpcpp
+- moc
+
+---
+
+### Available Layouts
+
+#### Mode 1
+
+GUI Monitor + GUI Music Player
+
+![alt text](Screenshots/GUI.png)
+
+---
+
+#### Mode 2
+
+TUI Monitor + TUI Music Player
+
+![alt text](Screenshots/TUI.png)
+
+---
+
+#### Mode 3
+
+GUI Monitor + TUI Music Player
+
+![alt text](Screenshots/TGUI3.png)
+
+---
+
+#### Mode 4
+
+TUI Monitor + GUI Music Player
+
+![alt text](Screenshots/TGUI4.png)
+
+---
+
 # Appearance
 
 | Component | Theme |
