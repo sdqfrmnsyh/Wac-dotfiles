@@ -1,0 +1,45 @@
+
+* {
+    font: "Sans 12";
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+window {
+    location : west;
+    y-offset : 50px;
+    width    : 25%;
+    height   : 555px;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 12px;
+    background-color: #202020cc;
+}
+
+mainbox {
+    spacing: 15px;
+    padding: 10px;
+}
+
+inputbar {
+    background-color: #1f1f1f80;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+listview {
+    lines: 11;
+    columns: 1;
+}
+
+element {
+    spacing: 1em;
+    padding: 5px;
+    border-radius: 6px;
+    text-color: #e0e0e0;
+}
+
+element selected {
+    background-color: #0078d7;
+    text-color: #ffffff;
+}

@@ -1,0 +1,37 @@
+[global]
+    origin = bottom-right
+    offset = 0x35
+    width = 360
+    height = 120
+    notification_limit = 3
+    spacing = 8
+    corner_radius = 10
+    frame_width = 0
+    background = "#0f0e11"
+    foreground = "#FFFFFF"
+    separator_color = frame
+    separator_height = 0
+    font = "Segoe UI Variable 10"
+    icon_position = left
+    max_icon_size = 100
+    show_indicators = true
+    close = "X"
+    mouse_left_click = close_current
+    mouse_middle_click = close_all
+    timeout = 5
+    idle_threshold = 30
+    history = yes
+    sticky_history = yes
+
+[urgency_low]
+    background = "#0f0e11"
+    timeout = 3
+
+[urgency_normal]
+    background = "#0f0e11"
+    timeout = 5
+
+[urgency_critical]
+    background = "#0f0e11"
+    frame_color = "#C42B1C"
+    timeout = 0
