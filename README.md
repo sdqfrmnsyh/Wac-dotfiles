@@ -68,7 +68,7 @@ Designed for everyday desktop usage.
 
 ### Includes
 
-- Polybar status bar
+- Simple Display
 - Tint2 taskbar
 - Plank dock
 - Standard application launcher
