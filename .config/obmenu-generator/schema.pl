@@ -71,8 +71,8 @@ our $SCHEMA = [
 
       # obmenu-generator category
       {beg => ['Obmenu-Generator', 'accessories-text-editor']},
-        {item => ["$editor ~/.config/obmenu-generator/schema.pl", 'Menu Schema', 'text-x-generic']},
-        {item => ["$editor ~/.config/obmenu-generator/config.pl", 'Menu Config', 'text-x-generic']},
+        {item => ["$editor ~/.config/obmenu-generator/schema.pl", 'Edit Context Menu', 'text-x-generic']},
+        {item => ["$editor ~/.config/obmenu-generator/config.pl", 'Edit Config', 'text-x-generic']},
 
         {sep  => undef},
         {item => ['obmenu-generator -s -c',    'Generate a static menu',             'accessories-text-editor']},
@@ -101,6 +101,9 @@ our $SCHEMA = [
         {sep  => undef},
         {item => ['~/.scripts/ricing.sh normal',               'Normal Mode', 'system-run']},
         {item => ['~/.scripts/ricing.sh rice',               'Ricing Mode', 'system-run']},
+        {sep  => undef},
+        {item => ['taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 setsid picom -b',               'Picom on', 'system-run']},
+        {item => ['killall picom',               'Picom off', 'system-run']},
         {sep  => undef},
         {item => ['~/.scripts/colorscheme_context.sh enable',               'Enable adaptive theme', 'tint2']},
         {item => ['~/.scripts/colorscheme_context.sh disable',               'Disable adaptive theme', 'tint2']},
