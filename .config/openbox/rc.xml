@@ -55,7 +55,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Sans Serif</name>
       <size>8</size>
@@ -120,12 +120,14 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>Main</name>
+      <name>Game</name>
       <name>Social</name>
       <name>Music</name>
+      <name>(Desktop tanpa nama)</name>
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -350,17 +352,22 @@
     <!-- Win. -->
     <keybind key="W-r">
       <action name="Execute">
-        <command>rofi -show drun</command>
+        <command>~/.scripts/rofi.sh main</command>
       </action>
     </keybind>
     <keybind key="W-period">
       <action name="Execute">
-        <command>rofi -show emoji -theme ~/.config/rofi/themes/emoji.rasi</command>
+        <command>~/.scripts/rofi.sh emoji</command>
       </action>
     </keybind>
     <keybind key="XF86Tools">
       <action name="Execute">
-        <command>rofi -show drun -theme ~/.config/rofi/themes/nord.rasi</command>
+        <command>~/.scripts/rofi.sh power</command>
+      </action>
+    </keybind>
+    <keybind key="W-Escape">
+      <action name="Execute">
+        <command>~/.scripts/rofi.sh power</command>
       </action>
     </keybind>
     <!-- Refresh Theme. -->

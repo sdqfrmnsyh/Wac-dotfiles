@@ -327,6 +327,7 @@ TUI Monitor + GUI Music Player
 | Icons | [Eleven](https://www.gnome-look.org/p/2297057) |
 | Cursor | [Win11OSX](https://www.gnome-look.org/p/2297057) |
 | Openbox | [Kaunas](https://github.com/Dovias/Kaunas) |
+| Display Manager | [SilentSDDM](https://github.com/uiriansan/SilentSDDM) |
 
 ## Fonts
 
@@ -372,10 +373,7 @@ networkmanager
 kitty
 thunar
 missioncenter
-archlinux-logout
 feh
-jq
-xdotool
 ```
 
 ---
@@ -509,6 +507,7 @@ The installer will automatically:
 | Shortcut | Action |
 |----------|--------|
 | <kbd>XF86HomePage</kbd> | Wallpaper Manager |
+| <kbd>Super</kbd> + <kbd>Esc</kbd> | Power Menu |
 | <kbd>Pause</kbd> | Toggle Picom |
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | Toggle Auto Color Scheme |
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> | Refresh Display Profile |

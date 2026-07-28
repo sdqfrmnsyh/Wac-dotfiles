@@ -1,0 +1,8 @@
+{ "name": "*.exe", "type": "Game", "nice": -3, "latency_nice": -3, "sched": "normal", "ioclass": "best-effort", "ionice": 2 },
+{ "name": "brave", "type": "Doc_Viewer", "nice": -2, "latency_nice": -2, "sched": "normal", "ioclass": "best-effort", "ionice": 4 },
+{ "name": "brave-origin", "type": "Doc_Viewer", "nice": -2, "latency_nice": -2, "sched": "normal", "ioclass": "best-effort", "ionice": 4 },
+{ "name": "Discord", "type": "Player", "nice": -3, "latency_nice": -4, "sched": "normal", "ioclass": "best-effort", "ionice": 3 },
+{ "name": "spotify", "type": "Player", "nice": -2, "latency_nice": -3, "sched": "normal", "ioclass": "best-effort", "ionice": 4 },
+{ "name": "sober", "type": "Game", "nice": -4, "latency_nice": -6, "sched": "normal", "ioclass": "best-effort", "ionice": 2 },
+{ "name": "mpv", "type": "Player", "nice": -1, "latency_nice": -2, "sched": "normal", "ioclass": "best-effort", "ionice": 5 },
+{ "name": "xwinwrap", "type": "BG_Task", "nice": 5, "latency_nice": 2, "sched": "normal", "ioclass": "best-effort", "ionice": 6 }

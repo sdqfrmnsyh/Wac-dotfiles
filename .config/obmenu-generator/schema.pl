@@ -112,13 +112,17 @@ our $SCHEMA = [
     {end => undef},
 
     {sep => undef},
-
+    
 	## The refresh screen command
-    {item => ['~/.scripts/display.sh', 'Refresh Display', 'preferences-desktop-theme']},
+    {item => ['~/.scripts/display.sh', 'Refresh display', 'preferences-desktop-theme']},
+    
+    ## Updater
+    {item => ['~/.scripts/updater.sh', 'System update', 'applications-system']},
     
     ## The task manager command
-    {item => ['missioncenter', 'Task manager', 'io.missioncenter.MissionCenter']},
+    {item => ['kitty -e htop', 'Task manager', 'htop']},
+    
     
     ## This uses the 'oblogout' menu
-    {item => ['archlinux-logout', 'Power', 'application-exit']},
+    {item => ['~/.scripts/rofi.sh power', 'Power', 'application-exit']},
 ]

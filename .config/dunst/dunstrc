@@ -7,7 +7,7 @@
     spacing = 8
     corner_radius = 10
     frame_width = 0
-    background = "#0f0e11"
+    background = "#94b994"
     foreground = "#FFFFFF"
     separator_color = frame
     separator_height = 0
@@ -20,18 +20,22 @@
     mouse_middle_click = close_all
     timeout = 5
     idle_threshold = 30
+    show_age_threshold = -1
     history = yes
-    sticky_history = yes
+    sticky_history = no
+    
+[play_sound]
+    summary = "*"
+    script = ~/.scripts/dunsound.sh
 
 [urgency_low]
-    background = "#0f0e11"
+    background = "#94b994"
     timeout = 3
 
 [urgency_normal]
-    background = "#0f0e11"
+    background = "#94b994"
     timeout = 5
 
 [urgency_critical]
-    background = "#0f0e11"
-    frame_color = "#C42B1C"
-    timeout = 0
+    background = "#94b994"
+    timeout = 5
