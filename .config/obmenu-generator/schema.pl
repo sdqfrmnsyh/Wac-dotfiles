@@ -30,7 +30,7 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
 
     #          COMMAND                 LABEL              ICON
-    {item => ['thunar .',       'File Manager', 'system-file-manager']},
+    {item => ['pcmanfm .',       'File Manager', 'system-file-manager']},
     {item => ['kitty',            'Terminal',     'utilities-terminal']},
     {item => ['xdg-open http://', 'Browser',  'web-browser']},
     {item => ['obconf-qt',            'Settings',  'obconf-qt']},

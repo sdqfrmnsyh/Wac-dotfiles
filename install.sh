@@ -44,7 +44,7 @@ rofi-emoji \
 rofi-power-menu \
 dunst \
 kitty \
-thunar \
+pcmanfm \
 fastfetch \
 playerctl \
 brightnessctl \
@@ -53,7 +53,6 @@ networkmanager \
 missioncenter \
 feh \
 jq \
-xdotool \
 git \
 wget \
 curl \
