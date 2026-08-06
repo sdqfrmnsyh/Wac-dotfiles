@@ -30,15 +30,10 @@ fi
 echo "[2/6] Installing dependencies..."
 
 yay -Syu --needed --noconfirm \
-openbox \
-xorg-server \
-xorg-xinit \
-xorg-xrandr \
-xorg-xsetroot \
 polybar \
 tint2 \
 plank \
-picom \
+picom-ftlabs-git \
 rofi \
 rofi-emoji \
 rofi-power-menu \
@@ -50,13 +45,22 @@ playerctl \
 brightnessctl \
 pamixer \
 networkmanager \
-missioncenter \
+pavucontrol \
+scrot \
+polkit-gnome \
+xorg-xset \
+xclip \
+ffmpeg \ 
+imagemagick \
+mission-center \
 feh \
-jq \
+mv \
 git \
+brave-origin-bin \
 nano \
 wget \
 curl \
+cp \
 unzip \
 ananicy-cpp \
 cachyos-ananicy-rules \
@@ -65,6 +69,10 @@ htop \
 ttf-jetbrains-mono-nerd \
 ttf-material-design-icons-desktop \
 adobe-source-han-code-jp-fonts \
+libnotify \
+geany \
+alsa-utils \
+htop \
 ttf-nerd-fonts-symbols-mono
 
 # --------------------------------------------------
