@@ -54,6 +54,7 @@ missioncenter \
 feh \
 jq \
 git \
+nano \
 wget \
 curl \
 unzip \
@@ -61,7 +62,6 @@ ananicy-cpp \
 cachyos-ananicy-rules \
 cava \
 htop \
-spicetify-cli \
 ttf-jetbrains-mono-nerd \
 ttf-material-design-icons-desktop \
 adobe-source-han-code-jp-fonts \
@@ -76,6 +76,7 @@ echo "[3/6] Installing dotfiles..."
 cp -rf .config "$HOME/"
 cp -rf .local "$HOME/"
 cp -rf .scripts "$HOME/"
+cp -rf Wallpapers "$HOME/"
 
 cp -f .face "$HOME/"
 
