@@ -260,7 +260,7 @@
     <!-- Keybindings for running applications -->
     <keybind key="XF86Explorer">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <!-- Brightness control. -->

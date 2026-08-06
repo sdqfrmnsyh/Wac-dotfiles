@@ -94,6 +94,13 @@ our $SCHEMA = [
         {item => ['openbox --restart',               'Restart Openbox', 'openbox']},
       {end => undef},
       
+      # Notif
+      {beg => ['Notification', 'system-run']},
+        {item => ["~/.scripts/notif.sh ena", 'Enable sound',   'system-run']},
+        {item => ["~/.scripts/notif.sh dis",    'Disable sound',          'system-run']},
+        {item => ["~/.scripts/notif.sh stat",  'Status sound',        'system-run']},
+      {end => undef},
+      
       # Theme
       {beg => ['Theme', 'tint2']},
         {item => ["$editor ~/.scripts/autocolorscheme.sh", 'Edit Adaptive theme', 'text-x-generic']},
