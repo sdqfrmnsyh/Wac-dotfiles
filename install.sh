@@ -131,3 +131,17 @@ echo " Installation Complete!"
 echo "====================================="
 echo
 echo "Please log out and log back in."
+echo
+
+read -rp "Do you want to restart your system to apply all changes now? [y/N]: " reboot_choice0
+
+case "$reboot_choice" in
+    [Yy]|[Yy][Ee][Ss])
+        echo "Rebooting..."
+        sleep 2
+        sudo reboot
+        ;;
+    *)
+        echo "No restart selected."
+        ;;
+esac
