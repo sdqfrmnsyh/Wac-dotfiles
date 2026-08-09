@@ -7,11 +7,41 @@ echo "      Wac Dotfiles Installer"
 echo "====================================="
 
 # --------------------------------------------------
+# Install Chaotic-AUR
+# --------------------------------------------------
+
+echo "[1/7] Setting up Chaotic-AUR..."
+
+if ! grep -q "^chaotic-aur" /etc/pacman.conf; then
+echo "Installing Chaotic-AUR keyring and mirrorlist..."
+
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+
+sudo pacman -U --noconfirm \
+    'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' \
+    'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+
+echo "Enabling Chaotic-AUR repository..."
+
+sudo tee -a /etc/pacman.conf >/dev/null <<'EOF'
+
+[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist
+EOF
+
+sudo pacman -Syu --noconfirm
+
+else
+echo "Chaotic-AUR is already enabled."
+fi
+
+# --------------------------------------------------
 # Install yay
 # --------------------------------------------------
 
 if ! command -v yay &>/dev/null; then
-    echo "[1/6] Installing yay..."
+    echo "[2/7] Installing yay..."
 
     sudo pacman -S --needed git base-devel
 
@@ -27,7 +57,7 @@ fi
 # Install Packages
 # --------------------------------------------------
 
-echo "[2/6] Installing dependencies..."
+echo "[3/7] Installing dependencies..."
 
 yay -Syu --needed --noconfirm \
 polybar \
@@ -85,7 +115,7 @@ ttf-nerd-fonts-symbols-mono
 # Copy Dotfiles
 # --------------------------------------------------
 
-echo "[3/6] Installing dotfiles..."
+echo "[4/7] Installing dotfiles..."
 
 cp -rf .config "$HOME/"
 cp -rf .local "$HOME/"
@@ -98,7 +128,7 @@ cp -f .face "$HOME/"
 # Additional Config
 # --------------------------------------------------
 
-echo "[4/6] Installing additional configuration..."
+echo "[5/7] Installing additional configuration..."
 
 sudo cp -f Additional/tlp.conf /etc/tlp.conf 2>/dev/null || true
 sudo mkdir -p /etc/tuned/Modz 2>/dev/null || true
@@ -111,7 +141,7 @@ sudo cp -f Additional/rofi-power-menu /usr/bin/rofi-power-menu 2>/dev/null || tr
 # Permissions
 # --------------------------------------------------
 
-echo "[5/6] Setting permissions..."
+echo "[6/7] Setting permissions..."
 
 chmod -R +x "$HOME/.scripts"
 chmod -R +x "$HOME/.local/bin"
@@ -120,7 +150,7 @@ chmod -R +x "$HOME/.local/bin"
 # Reload Openbox
 # --------------------------------------------------
 
-echo "[6/6] Reloading Openbox..."
+echo "[7/7] Reloading Openbox..."
 
 openbox --reconfigure 2>/dev/null || true
 openbox --restart 2>/dev/null || true
