@@ -49,7 +49,6 @@ networkmanager \
 pavucontrol \
 scrot \
 polkit-gnome \
-xorg-xset \
 xclip \
 ffmpeg \ 
 imagemagick \
@@ -124,6 +123,7 @@ chmod -R +x "$HOME/.local/bin"
 echo "[6/6] Reloading Openbox..."
 
 openbox --reconfigure 2>/dev/null || true
+openbox --restart 2>/dev/null || true
 
 echo
 echo "====================================="
