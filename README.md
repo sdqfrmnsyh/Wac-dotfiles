@@ -147,9 +147,21 @@ Minimal launcher optimized for desktop ricing.
 
 ### Emoji Picker
 
-Available in both modes.
+Available in both modes, with optional Picom transparency.
 
-![](Screenshots/RofiEmoji.png)
+| Picom | No Picom |
+|:---:|:---:|
+| ![Picom](Screenshots/emoji-picom.png) | ![No Picom](Screenshots/emoji-no-picom.png) |
+
+---
+
+### Power Menu
+
+Minimal power menu with optional Picom transparency.
+
+| Picom | No Picom |
+|:---:|:---:|
+| ![Picom](Screenshots/power-picom.png) | ![No Picom](Screenshots/power-no-picom.png) |
 
 ---
 
@@ -353,7 +365,7 @@ openbox
 xorg-server
 xorg-xinit
 xorg-xrandr
-xorg-xsetroot
+xorg-xset
 polybar
 tint2
 plank
@@ -371,7 +383,7 @@ networkmanager
 
 ```bash
 kitty
-thunar
+pcmanfm
 missioncenter
 feh
 ```

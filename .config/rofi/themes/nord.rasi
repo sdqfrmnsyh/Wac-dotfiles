@@ -1,6 +1,7 @@
-* {
+	* {
     font:   "IBM Plex Mono 12";
 
+    well:     #55181818;
     nord0:     #2e3440;
     nord1:     #3b4252;
     nord2:     #434c5e;
@@ -21,7 +22,16 @@
     nord14:    #a3be8c;
     nord15:    #b48ead;
 
-    background-color:   transparent;
+    background-color: transparent;
+
+    background: #6d6d78;
+    foreground: #ececec;
+
+    selected-bg: #efefef;
+    selected-fg: #3b3b3b;
+
+    border-color: #efefef;
+
     text-color:         @nord4;
     accent-color:       @nord8;
 
@@ -31,47 +41,46 @@
 }
 
 window {
-    background-color:   @nord0;
-    border-color:       @accent-color;
-
+    background-color:   @well;
+    border-color: #d8dee9;
+    
     location:   center;
-    width:      480px;
+    width:     180px;
     border:     1px;
-    border-radius    : 12px;
+    border-radius    : 0px;
 }
 
 inputbar {
-    padding:    8px 12px;
-    spacing:    12px;
-    children:   [ icon-search, entry ];
+    enabled: false;
 }
 
-icon-search, entry, element-text, element-icon {
+element-text, element-icon {
     vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+mainbox {
+    children: [ listview ]; /* Memaksa rofi hanya merender daftar menu */
 }
 
 entry {
-  font              : "Sans 12";
-  placeholder       : "Type here to search";
-  placeholder-color : @nord1;
-}
-
-icon-search {
-  expand   : false;
-  filename : "search-symbolic";
-  size     : 18px;
+    enabled: false; /* Mematikan komponen input teks */
 }
 
 listview {
-    lines:      8;
+    lines:      6;
     columns:    1;
 
     fixed-height:   false;
 }
 
 element {
-    padding:    8px;
-    spacing:    8px;
+    padding: 10px;
+    spacing: 10px;
+}
+
+element-icon {
+    enabled: false;
 }
 
 element normal urgent {
@@ -86,20 +95,22 @@ element alternate active {
     text-color: @accent-color;
 }
 
+
 element selected {
-    text-color: @nord0;
+    text-color: #2e3440;
 }
 
 element selected normal {
-    background-color:   @accent-color;
-}
-
-element selected urgent {
-    background-color:   @nord13;
+    background-color: #d8dee9;
 }
 
 element selected active {
-    background-color:   @nord8;
+    background-color: #d8dee9;
+}
+
+element selected urgent {
+    background-color: #bf616a;
+    text-color: #eceff4;
 }
 
 element-icon {
@@ -108,4 +119,5 @@ element-icon {
 
 element-text {
     text-color: inherit;
+    horizontal-align: 0.5;
 }

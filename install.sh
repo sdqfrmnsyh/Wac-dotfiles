@@ -32,6 +32,7 @@ echo "[2/6] Installing dependencies..."
 yay -Syu --needed --noconfirm \
 polybar \
 tint2 \
+xorg-xset \
 plank \
 picom-ftlabs-git \
 rofi \
@@ -73,6 +74,12 @@ libnotify \
 geany \
 alsa-utils \
 htop \
+inter-font \
+ttf-ibm-plex \
+cantarell-fonts \
+noto-fonts \
+ttf-liberation \
+ttf-dejavu \
 ttf-nerd-fonts-symbols-mono
 
 # --------------------------------------------------

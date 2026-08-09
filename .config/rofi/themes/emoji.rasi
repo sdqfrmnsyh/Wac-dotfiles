@@ -1,5 +1,5 @@
 * {
-    font:   "IBM Plex Mono 12";
+    font:   "Cantarell 12";
 
     nord0:     #2e3440;
     nord1:     #3b4252;
@@ -21,7 +21,16 @@
     nord14:    #a3be8c;
     nord15:    #b48ead;
 
-    background-color:   transparent;
+    background-color: transparent;
+
+    background: #6d6d78;
+    foreground: #ececec;
+
+    selected-bg: #efefef;
+    selected-fg: #3b3b3b;
+
+    border-color: #efefef;
+
     text-color:         @nord4;
     accent-color:       @nord8;
 
@@ -31,13 +40,13 @@
 }
 
 window {
-    background-color:   @nord0;
-    border-color:       @accent-color;
-
+    background-color:   #55181818;
+    border-color: #FFFFFF;
+    
     location:   center;
-    width:      480px;
+    width:     540px;
     border:     1px;
-    border-radius    : 12px;
+    border-radius    : 0px;
 }
 
 inputbar {
@@ -52,8 +61,6 @@ icon-search, entry, element-text, element-icon {
 
 entry {
   font              : "Sans 12";
-  placeholder       : "Type here to search";
-  placeholder-color : @nord1;
 }
 
 icon-search {
@@ -91,19 +98,20 @@ element alternate active {
 }
 
 element selected {
-    text-color: @nord0;
+    text-color: #2e3440;
 }
 
 element selected normal {
-    background-color:   @accent-color;
-}
-
-element selected urgent {
-    background-color:   @nord13;
+    background-color: #d8dee9;
 }
 
 element selected active {
-    background-color:   @nord8;
+    background-color: #d8dee9;
+}
+
+element selected urgent {
+    background-color: #bf616a;
+    text-color: #eceff4;
 }
 
 element-icon {
@@ -111,5 +119,5 @@ element-icon {
 }
 
 element-text {
-    text-color: inherit;
+    text-color: #FFFFFF;
 }
