@@ -14,7 +14,7 @@ if [ "$MODE" = "rice" ]; then
     killall polybar
     killall plank
     killall picom
-    swr /home/modz/.config/rofi/themes/nord.rasi
+    ~/.local/bin/swr /home/modz/.config/rofi/themes/nord.rasi
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 polybar -r &
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 plank &
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 picom &
@@ -39,7 +39,7 @@ elif [ "$MODE" = "normal" ]; then
     killall picom
     killall tint2
     killall dunst
-    swr /home/modz/.config/rofi/themes/windows11-list-dark.rasi
+    ~/.local/bin/swr /home/modz/.config/rofi/themes/windows11-list-dark.rasi
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 /home/modz/.scripts/autocolorscheme.sh &
     sleep 2
     dunstify -r $ID "🖥️ Normal Mode" "Performance comes first." -t 2000
@@ -55,7 +55,7 @@ else
     killall colorscheme.sh
     killall /home/modz/.scripts/autocolorscheme.sh
     killall autocolorscheme.sh
-    swr /home/modz/.config/rofi/themes/windows11-list-dark.rasi
+    ~/.local/bin/swr /home/modz/.config/rofi/themes/windows11-list-dark.rasi
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 /home/modz/.scripts/autocolorscheme.sh &
     sleep 2
     dunstify -r $ID "🖥️ Normal Mode" "Performance comes first." -t 2000
@@ -70,7 +70,7 @@ else
     killall polybar
     killall plank
     killall picom
-    swr /home/modz/.config/rofi/themes/nord.rasi
+    ~/.local/bin/swr /home/modz/.config/rofi/themes/nord.rasi
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 polybar -r &
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 plank &
     taskset -c 0 nice -n 19 ionice -c3 stdbuf -oL -eL chrt --idle 0 picom &
