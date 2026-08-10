@@ -101,6 +101,7 @@ ttf-material-design-icons-desktop \
 adobe-source-han-code-jp-fonts \
 libnotify \
 geany \
+wmctrl \
 alsa-utils \
 htop \
 inter-font \
