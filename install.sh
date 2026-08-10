@@ -64,6 +64,8 @@ polybar \
 tint2 \
 xorg-xset \
 plank \
+qt5-base \
+qt5-tools \
 picom-ftlabs-git \
 rofi \
 rofi-emoji \
