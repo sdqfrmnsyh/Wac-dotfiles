@@ -98,6 +98,7 @@ ananicy-cpp \
 cachyos-ananicy-rules \
 cava \
 htop \
+gtk2 \
 ttf-jetbrains-mono-nerd \
 ttf-material-design-icons-desktop \
 adobe-source-han-code-jp-fonts \
