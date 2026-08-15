@@ -369,7 +369,7 @@ xorg-xset
 polybar
 tint2
 plank
-picom
+picom-ftlabs-git
 rofi
 dunst
 feh
@@ -377,15 +377,50 @@ playerctl
 brightnessctl
 alsa-utils
 networkmanager
+pavucontrol
+polkit-gnome
+qt5-base
+qt5-tools
+kitty
+pcmanfm
+wmctrl
 ```
 
 ## Utilities
 
 ```bash
-kitty
-pcmanfm
-missioncenter
-feh
+rofi-emoji
+rofi-power-menu
+fastfetch
+pamixer
+scrot
+xclip
+ffmpeg
+imagemagick
+mission-center
+git
+brave-origin-bin
+nano
+wget
+curl
+unzip
+ananicy-cpp
+cachyos-ananicy-rules
+cava
+htop
+gtk2
+libnotify
+geany
+inter-font
+ttf-jetbrains-mono-nerd
+ttf-material-design-icons-desktop
+adobe-source-han-code-jp-fonts
+ttf-ibm-plex
+cantarell-fonts
+noto-fonts
+ttf-liberation
+ttf-dejavu
+ttf-nerd-fonts-symbols-mono
 ```
 
 ---
